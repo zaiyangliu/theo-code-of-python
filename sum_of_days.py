@@ -12,7 +12,7 @@ for year in range(1900,2001):
                 day = 29  
             else:  
                 day = 28  
-        day_Sum + = day  
+        day_Sum + = day  #因为是看一个月的第一天是不是周日，所以总天数是所day再加上1，所以day_sum初始值为1的原因
         if day_Sum % 7 == 0 and year > 1900:  
             count + = 1  
 print count  
